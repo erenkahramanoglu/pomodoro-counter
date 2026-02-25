@@ -1,0 +1,527 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #0f172a;
+     background-image:
+         radial-gradient(at 40% 20%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+         radial-gradient(at 80% 0%, rgba(245, 158, 11, 0.1) 0px, transparent 50%),
+         radial-gradient(at 0% 50%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+     min-height: 100vh;
+     background-attachment: fixed;
+     background-size: cover;
+     color: white;
+     min-height: 100vh;
+ }
+
+ .sidebar {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 250px;
+     height: 100vh;
+     background-color: rgb(40, 40, 70);
+     padding: 20px;
+ }
+
+ .logo h1 {
+     font-size: 24px;
+     color: white;
+     margin-bottom: 5px;
+ }
+
+ .logo p {
+     font-size: 12px;
+     color: gray;
+ }
+
+ .menu {
+     margin-top: 40px;
+ }
+
+ .menu-item {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     padding: 15px;
+     color: white;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+
+ .menu-item:hover {
+     background-color: rgb(60, 60, 90);
+ }
+
+ .menu-item.active {
+     background-color: rgb(100, 50, 150);
+ }
+
+ .main {
+     margin-left: 250px;
+     padding: 40px;
+ }
+
+ .main h1 {
+     font-size: 40px;
+     margin-bottom: 30px;
+     width: 500px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .timer-box {
+     background-color: rgba(255, 255, 255, 0.1);
+     padding: 40px;
+     border-radius: 20px;
+     margin-bottom: 30px;
+     width: 900px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .buttons {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+     margin-bottom: 40px;
+ }
+
+ .btn-mode {
+     padding: 12px 30px;
+     background-color: rgb(60, 60, 90);
+     color: white;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     font-size: 15px;
+ }
+
+ .btn-mode:hover {
+     background-color: rgb(80, 80, 110);
+ }
+
+ .btn-mode.active {
+     background-color: rgb(100, 50, 150);
+ }
+
+ .timer {
+     font-size: 100px;
+     text-align: center;
+     margin: 40px 0;
+     font-weight: bold;
+ }
+
+ .controls {
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+ }
+
+ .controls button {
+     padding: 15px 35px;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     font-size: 16px;
+     color: white;
+ }
+
+ .btn-start {
+     background-color: green;
+ }
+
+ .btn-start:hover {
+     background-color: rgb(0, 150, 0);
+ }
+
+ .btn-pause {
+     background-color: orange;
+ }
+
+ .btn-pause:hover {
+     background-color: rgb(230, 140, 0);
+ }
+
+ .btn-stop {
+     background-color: red;
+ }
+
+ .btn-stop:hover {
+     background-color: rgb(200, 0, 0);
+ }
+
+ .goals-box {
+     background-color: rgba(255, 255, 255, 0.1);
+     padding: 40px;
+     border-radius: 20px;
+     margin-bottom: 30px;
+     width: 900px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .goals-box h2 {
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+
+ .input-area {
+     display: flex;
+     gap: 10px;
+ }
+
+ .input-area input {
+     flex: 1;
+     padding: 15px;
+     border: none;
+     border-radius: 10px;
+     font-size: 16px;
+ }
+
+ .btn-add {
+     padding: 15px 30px;
+     background-color: purple;
+     color: white;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ .btn-add:hover {
+     background-color: rgb(120, 0, 120);
+ }
+
+ .motivation-box {
+     background-color: rgba(255, 255, 255, 0.1);
+     padding: 40px;
+     border-radius: 20px;
+     width: 900px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .motivation-box h2 {
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+
+ .quote {
+     background-color: white;
+     color: black;
+     padding: 25px;
+     border-radius: 15px;
+     margin: 20px 0;
+ }
+
+ .quote p {
+     font-size: 20px;
+     font-style: italic;
+ }
+
+ .btn-new {
+     padding: 15px 35px;
+     background-color: rgb(200, 50, 150);
+     color: white;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ .btn-new:hover {
+     background-color: rgb(180, 40, 130);
+ }
+
+ @media (max-width: 1400px) {
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         width: 90%;
+         max-width: 800px;
+     }
+ }
+
+ @media (max-width: 1200px) {
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         width: 95%;
+         padding: 30px;
+     }
+
+     .main {
+         padding: 30px 20px;
+     }
+
+     .main h1 {
+         font-size: 36px;
+         width: auto;
+         max-width: 600px;
+     }
+
+     .timer {
+         font-size: 85px;
+     }
+ }
+
+ @media (max-width: 992px) {
+     .sidebar {
+         width: 220px;
+         padding: 15px;
+     }
+
+     .main {
+         margin-left: 220px;
+         padding: 30px 15px;
+     }
+
+     .timer {
+         font-size: 75px;
+     }
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         padding: 25px;
+     }
+
+     .btn-mode {
+         padding: 10px 25px;
+         font-size: 14px;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .sidebar {
+         position: relative;
+         width: 100%;
+         height: auto;
+         padding: 15px 20px;
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .logo {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+     }
+
+     .logo h1 {
+         font-size: 20px;
+         margin-bottom: 0;
+     }
+
+     .logo p {
+         font-size: 11px;
+     }
+
+     .menu {
+         margin-top: 0;
+         display: flex;
+         gap: 8px;
+         overflow-x: auto;
+         padding-bottom: 5px;
+     }
+
+     .menu-item {
+         padding: 12px 18px;
+         font-size: 14px;
+         white-space: nowrap;
+         flex-shrink: 0;
+     }
+
+     .main {
+         margin-left: 0;
+         padding: 25px 15px;
+     }
+
+     .main h1 {
+         font-size: 32px;
+         width: 100%;
+         margin-bottom: 25px;
+     }
+
+     .timer {
+         font-size: 70px;
+         margin: 30px 0;
+     }
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         width: 100%;
+         padding: 25px 20px;
+     }
+
+     .buttons {
+         gap: 10px;
+     }
+
+     .btn-mode {
+         padding: 10px 20px;
+         font-size: 13px;
+     }
+
+     .controls button {
+         padding: 12px 28px;
+         font-size: 15px;
+     }
+
+     .goals-box h2,
+     .motivation-box h2 {
+         font-size: 26px;
+     }
+
+     .quote p {
+         font-size: 18px;
+     }
+ }
+
+ @media (max-width: 576px) {
+     .logo {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 5px;
+     }
+
+     .logo h1 {
+         font-size: 18px;
+     }
+
+     .logo p {
+         display: block;
+         font-size: 10px;
+     }
+
+     .menu {
+         width: 100%;
+         justify-content: flex-start;
+     }
+
+     .menu-item {
+         padding: 10px 15px;
+         font-size: 13px;
+     }
+
+     .main h1 {
+         font-size: 26px;
+         margin-bottom: 20px;
+     }
+
+     .timer {
+         font-size: 56px;
+         margin: 25px 0;
+     }
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         padding: 20px 15px;
+         border-radius: 15px;
+     }
+
+     .buttons {
+         flex-direction: column;
+         width: 100%;
+     }
+
+     .btn-mode {
+         width: 100%;
+         padding: 12px 20px;
+         font-size: 14px;
+     }
+
+     .controls {
+         flex-direction: column;
+         gap: 10px;
+         width: 100%;
+     }
+
+     .controls button {
+         width: 100%;
+         padding: 14px 0;
+         font-size: 15px;
+     }
+
+     .input-area {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .input-area input {
+         width: 100%;
+         padding: 12px;
+         font-size: 15px;
+     }
+
+     .btn-add {
+         width: 100%;
+         padding: 12px;
+     }
+
+     .goals-box h2,
+     .motivation-box h2 {
+         font-size: 22px;
+     }
+
+     .quote {
+         padding: 20px 15px;
+     }
+
+     .quote p {
+         font-size: 16px;
+         line-height: 1.6;
+     }
+
+     .btn-new {
+         width: 100%;
+         padding: 14px;
+     }
+ }
+
+
+ @media (max-width: 375px) {
+     .sidebar {
+         padding: 12px 15px;
+     }
+
+     .main {
+         padding: 20px 12px;
+     }
+
+     .main h1 {
+         font-size: 24px;
+     }
+
+     .timer {
+         font-size: 48px;
+     }
+
+     .timer-box,
+     .goals-box,
+     .motivation-box {
+         padding: 18px 12px;
+     }
+
+     .menu-item {
+         padding: 8px 12px;
+         font-size: 12px;
+     }
+
+     .goals-box h2,
+     .motivation-box h2 {
+         font-size: 20px;
+     }
+
+     .quote p {
+         font-size: 15px;
+     }
+ }
