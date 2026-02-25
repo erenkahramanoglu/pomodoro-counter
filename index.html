@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero-Son - Student Productivity App</title>
+    <link rel="stylesheet" href="Pomodoro-Counter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+     <div class="sidebar">
+        <div class="logo">
+            <h1>Hero-Son</h1>
+            <p>Student Productivity App</p>
+        </div>
+        <div class="menu">
+            <div class="menu-item active">
+                <i class="bi bi-house-door-fill"></i>
+                <span>Home Page</span>
+            </div>
+            <div class="menu-item">
+                <i class="bi bi-clock"></i>
+                <span>Timer</span>
+            </div>
+            <div class="menu-item">
+                <i class="bi bi-flag"></i>
+                <span>My Goals</span>
+            </div>
+            <div class="menu-item">
+                <i class="bi bi-graph-up"></i>
+                <span>Statistics</span>
+            </div>
+            <div class="menu-item">
+                <i class="bi bi-lightbulb-fill"></i>
+                <span>Motivation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Work Scheduler</h1>
+
+        <div class="timer-box">
+            <div class="buttons">
+                <button class="btn-mode active">Pomodoro</button>
+                <button class="btn-mode">Rule 52/17</button>
+                <button class="btn-mode">90 Minutes</button>
+            </div>
+
+            <div class="timer">25:00</div>
+
+            <div class="controls">
+                <button class="btn-start"><i class="bi bi-play-fill"></i> Start</button>
+                <button class="btn-pause"><i class="bi bi-pause-fill"></i> Pause</button>
+                <button class="btn-stop"><i class="bi bi-stop-fill"></i> Stop</button>
+            </div>
+        </div>
+
+        <div class="goals-box">
+            <h2><i class="bi bi-flag-fill"></i> My Goals</h2>
+            <div class="input-area">
+                <input type="text" placeholder="Enter your goal here...">
+                <button class="btn-add"><i class="bi bi-plus-circle-fill"></i> Add</button>
+            </div>
+        </div>
+
+        <div class="motivation-box">
+            <h2><i class="bi bi-lightbulb-fill"></i> Motivation Corner</h2>
+            <div class="quote">
+                <p>Taking a small step every day leads to great achievements!</p>
+            </div>
+            <button class="btn-new"><i class="bi bi-stars"></i> New Motivation</button>
+        </div>
+    </div>
+    <script src="Pomodoro-Counter.js"></script>
+</body>
+
+</html>
